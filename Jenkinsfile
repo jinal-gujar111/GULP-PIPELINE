@@ -22,8 +22,9 @@ pipeline {
 
         stage('Gulp') {
             steps {
-                echo 'Running Gulp task...'
-                sh 'npx gulp'
+                echo 'Running Gulp tasks...'
+                sh 'npx gulp sampleTaskSync'
+                sh 'npx gulp sampleTaskAsync'
             }
         }
 
